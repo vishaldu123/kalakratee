@@ -28,8 +28,7 @@ class UserController extends Controller
     
     public function addUser()
     {
-        die("hello world");
-        //return view('admin.users.addUser');
+        return view('admin.users.addUser');
     }
 
     public function storeUser(Request $request)

@@ -1,6 +1,8 @@
 
 <!-- resources/views/users/show.blade.php -->
-@extends('admin.layouts')
+@extends('layouts.app')
+{{-- @extends('admin.layouts') --}}
+
 
 @section('content')
 <div class="container">

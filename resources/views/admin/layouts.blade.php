@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Laravel App</title>
     <!-- Include any CSS or JavaScript libraries here -->
+      <!-- Scripts -->
+      <script src="{{ asset('js/app.js') }}" defer></script>
+   
+      <!-- Styles -->
+      <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

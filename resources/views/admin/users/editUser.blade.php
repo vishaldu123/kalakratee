@@ -1,5 +1,5 @@
-@extends('admin.layouts')
-
+@extends('layouts.app')
+{{-- @extends('admin.layouts') --}}
 @section('content')
 <div class="container">
     <h1>Edit User</h1>
