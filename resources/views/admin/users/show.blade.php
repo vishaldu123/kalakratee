@@ -1,8 +1,10 @@
+@extends('adminlte::page')
 
-<!-- resources/views/users/show.blade.php -->
-@extends('layouts.app')
-{{-- @extends('admin.layouts') --}}
+@section('title', 'Dashboard')
 
+@section('content_header')
+    <h1>Dashboard</h1>
+@stop
 
 @section('content')
 <div class="container">
@@ -37,4 +39,14 @@
         @endforeach
     </ul>
 </div>
-@endsection
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+    <script> console.log('Hi!'); </script>
+@stop
+
+
