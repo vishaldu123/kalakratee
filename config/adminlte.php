@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Kalakratee',
     'title_prefix' => '',
-    'title_postfix' => '',
+    'title_postfix' => ' -Kalakratee',
 
     /*
     |--------------------------------------------------------------------------
@@ -30,8 +30,8 @@ return [
     |
     */
 
-    'use_ico_only' => false,
-    'use_full_favicon' => false,
+    'use_ico_only' => true,
+    'use_full_favicon' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -63,12 +63,12 @@ return [
     |
     */
 
-    'logo' => '<b>KAdmin</b>',
-    'logo_img' => 'vendor/adminlte/dist/img/kalakratee.png',
+    'logo' => '<b>Kalakratee</b>',
+    'path' => 'images/logo_s.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'Admin Logo',
+    'logo_img_alt' => 'Kalakratee Logo',
 
     /*
     |--------------------------------------------------------------------------
@@ -86,8 +86,8 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/kalakratee.png',
-            'alt' => 'Auth Logo',
+            'path' => 'images/logo_s.png',
+            'alt' => 'Kalakratee',
             'class' => '',
             'width' => 50,
             'height' => 50,
@@ -109,8 +109,8 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/kalakratee.png',
-            'alt' => 'AdminLTE Preloader Image',
+            'path' => 'images/logo_s.png',
+            'alt' => 'Kalakratee',
             'effect' => 'animation__shake',
             'width' => 60,
             'height' => 60,
@@ -253,12 +253,12 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'admin/home',
-    'logout_url' => 'admin/logout',
-    'login_url' => 'admin/custom-login',
-    'register_url' => 'admin/custom-registration',
-    'password_reset_url' => 'admin/password/reset',
-    'password_email_url' => 'admin/password/email',
+    'dashboard_url' => '/',
+    'logout_url' => 'logout',
+    'login_url' => 'login',
+    'register_url' => 'register',
+    'password_reset_url' => 'password/reset',
+    'password_email_url' => 'password/email',
     'profile_url' => false,
 
     /*

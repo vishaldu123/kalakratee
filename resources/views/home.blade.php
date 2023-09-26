@@ -1,23 +1,46 @@
-@extends('layouts.app')
+@extends('adminlte::page')
+
+@section('title', 'Dashboard')
+
+@section('content_header')
+    <h1>Dashboard</h1>
+@stop
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+    <div class="box">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+        <div class="box-body">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <!-- Add more table headers for artwork attributes -->
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>artwork->id</td>
+                            <td>artwork->title</td>
+                            <td>artwork->description</td>
+                            <!-- Add more table columns for artwork attributes -->
+                            <td>
+                                edit/Delete
+                                <!-- Add a delete button as needed -->
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-</div>
-@endsection
+@stop
+
+@section('css')
+    <!-- Additional CSS styles if needed -->
+@stop
+
+@section('js')
+    <!-- Additional JavaScript scripts if needed -->
+@stop

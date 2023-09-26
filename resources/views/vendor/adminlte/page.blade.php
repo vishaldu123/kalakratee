@@ -28,7 +28,10 @@
 
         {{-- Left Main Sidebar --}}
         @if(!$layoutHelper->isLayoutTopnavEnabled())
-            @include('adminlte::partials.sidebar.left-sidebar')
+            <!-- Include the sidebar -->
+            @include('sidebar')
+
+            {{-- @include('adminlte::partials.sidebar.left-sidebar') --}}
         @endif
 
         {{-- Content Wrapper --}}
@@ -54,4 +57,5 @@
 @section('adminlte_js')
     @stack('js')
     @yield('js')
+
 @stop

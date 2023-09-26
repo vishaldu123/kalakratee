@@ -17,8 +17,8 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('username')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('username')->unique();
             $table->string('password');
             $table->text('bios')->nullable();
             $table->string('profile_picture')->nullable();
@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('instagram_id')->nullable();
             $table->string('youtube_id')->nullable();
             $table->string('watermark')->nullable();
+
             $table->rememberToken();
             $table->timestamps();
         });
